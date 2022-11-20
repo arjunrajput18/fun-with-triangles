@@ -17,8 +17,8 @@ function calculateScore() {
     index += 1;
     count += 1;
   }
-  if (count < correctAnswer.length) {
-    showingOutput.innerText = "Please check again and answer every question";
+  if (count < totalAnswer) {
+    showingOutput.innerText = "Please answer every question";
   } else {
     showingOutput.innerText = `Your score is ${score}/${totalAnswer}`;
   }
