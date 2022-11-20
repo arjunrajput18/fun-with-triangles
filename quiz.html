@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz</title>
+  </head>
+  <body>
+    <form class="quiz-form">
+        
+      <div>
+        <p>
+          What is the third angle for the triangle where angle1 = 45° and angle2
+          = 45°?
+        </p>
+        <label><input type="radio" name="question-one" value="45°" />45°</label>
+        <label><input type="radio" name="question-one" value="60°" />60°</label>
+        <label><input type="radio" name="question-one" value="90°" />90°</label>
+      </div>
+      <div>
+        <p>If a triangle has an angle of 90 degrees, what is it called?</p>
+        <label><input type="radio" name="question-two" value="actue" />actue</label>
+        <label><input type="radio" name="question-two" value="right-angle" />right-angle</label>
+        <label><input type="radio" name="question-two" value="obtuse" />obtuse</label>
+      </div>
+      <div>
+        <p> The diagonals of a rhombus are 16 cm and 12 cm, in length. The side of the rhombus in length is:</p>
+        <label><input type="radio" name="question-three" value="20cm" />20cm</label>
+        <label><input type="radio" name="question-three" value="8cm" />8cm</label>
+        <label><input type="radio" name="question-three" value="10cm" />10cm</label>
+      </div>
+      <div>
+        <p>
+            The height of an equilateral triangle of side 5 cm is
+        </p>
+        <label><input type="radio" name="question-four" value="4.33cm" />4.33cm</label>
+        <label><input type="radio" name="question-four" value="3.9cm" />3.9cm</label>
+        <label><input type="radio" name="question-four" value="5cm" />5cm</label>
+      </div>
+      <div>
+        <p>   
+            True or False:  A triangle can be constructed with the sides 2, 2, and 10. 
+        </p>
+        <label><input type="radio" name="question-five" value="True" />True</label>
+        <label><input type="radio" name="question-five" value="False" />False</label>
+      </div>
+    </form>
+    <button id="btn-submit">submit</button>
+    <div id="showing-output"></div>
+    <script src="quiz.js"></script>
+  </body>
+</html>
