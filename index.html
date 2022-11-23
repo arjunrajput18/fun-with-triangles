@@ -1,21 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fun with Triangles</title>
-</head>
-<body>
-    <h1>Is Triangle?</h1>
-    <label for="angle1">angle1</label>
-    <input type="number" class="input-angle"/>
-    <label for="angle2">angle2</label>
-    <input type="number"  class="input-angle"/>
-    <label for="angle3">angle3</label>
-    <input type="number"  class="input-angle"/>
-    <button id="btn-check">check</button>
-    <div id="showing-output"></div>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <nav>
+        <ul>
+          <li><a href="./index.html">Is Triangle?</a></li>
+          <li><a href="./quiz.html">Quiz</a></li>
+          <li><a href="./hypotenuse.html">Calculate Hypotenuse</a></li>
+          <li><a href="./areaOfTriangle.html">Area of Triangle</a></li>
+        </ul>
+      </nav>
+    </nav>
+ 
+    <div class="container">
+      <h1>Is Triangle?</h1>
+      <label for="angle1">angle1 :-
+      <input type="number" class="input-angle" /></label>
+      <label for="angle2">angle2 :-
+      <input type="number" class="input-angle" /></label>
+      <label for="angle3">angle3 :-
+      <input type="number" class="input-angle" /></label>
+      <button id="btn-check">check</button>
+      <div id="showing-output" class="output"></div>
+    </div>
+</div>
     <script src="isTriangle.js"></script>
-</body>
+  </body>
 </html>

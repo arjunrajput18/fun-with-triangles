@@ -4,7 +4,10 @@ const btnCheck = document.querySelector("#btn-check");
 
 const showingOutput = document.querySelector("#showing-output");
 
+
+
 function checkTriangle() {
+
   let sumofAngles = 0;
   for (let i = 0; i < inputAngle.length; i++) {
     sumofAngles+=parseInt(inputAngle[i].value)
@@ -15,7 +18,7 @@ if(sumofAngles===180){
 }else{
     showingOutput.innerHTML="Not a Triangle."
 }
+  }
 
-}
 
 btnCheck.addEventListener("click", checkTriangle);

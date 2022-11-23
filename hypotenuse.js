@@ -1,24 +1,23 @@
-const inputs=document.querySelectorAll(".side-input")
+const firstSide = document.querySelector("#first-side");
+const secondSide = document.querySelector("#second-side")
 const output=document.querySelector("#output")
-const btnCalculate=document.querySelector("#btn-calculate")
+const btnSubmit = document.querySelector("#btn-submit");
 
-function hypo(a,b){
-
-    if(a<=0 || b<=0){
-        return "please enter valid Length"
+function calculateHypotenuse() {
+    const a = Number(firstSide.value);
+    const b = Number(secondSide.value);
+  
+    if (a === 0 || b === 0) {
+      output.innerText = "Please enter valid lengths!";
+      return;
     }
-       const   hypoLength=a*a+b*b;
-       return hypoLength;
+  
+    var hypotenuse = Math.sqrt(a * a + b * b);
+    hypotenuse = hypotenuse.toFixed(2);
+  
+    console.log(hypotenuse);
+    output.innerText = `The length of hypotenuse is ${hypotenuse} units`;
+  }
+  btnSubmit.addEventListener("click", calculateHypotenuse);
 
-}
-
-
-function calculateHypo(){
-    const hypoLength=hypo(parseInt(inputs[0].value),parseInt(inputs[1].value))
-    output.innerText=hypoLength;
-
-}
-
-
-btnCalculate.addEventListener("click",calculateHypo)
 // console.log("working")

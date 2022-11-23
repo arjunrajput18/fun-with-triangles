@@ -5,17 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="style.css" rel="stylesheet" />
 </head>
 <body>
-    <div>
-        <h1>calculate Area of triangle</h1>
-        <label for ="triangle-base">Enter base length</label>
-        <input id="triangle-base" type="number"/>
-        <lable for="triangle-height">Enter height of triangle</label>
-        <input id="triangle-height"/>
+    <nav>
+        <ul>
+          <li><a href="./index.html">Is Triangle?</a></li>
+          <li><a href="./quiz.html">Quiz</a></li>
+          <li><a href="./hypotenuse.html">Calculate Hypotenuse</a></li>
+          <li><a href="./areaOfTriangle.html">Area of Triangle</a></li>
+        </ul>
+      </nav>
+    </nav>
+ 
+    
+    <div class="container">
+        <h1>Calculate Area of Triangle</h1>
+        <label for ="triangle-base">Enter base length :
+        <input id="triangle-base" type="number" class="triangle-base"/></label>
+        <label for="triangle-height">Enter height of triangle :
+        <input id="triangle-height" type="number"  class="triangle-height"/></label>
         <button id="btn-calculate">Calculate</button>
        <div id="output"></div>
-       <h2>Formula :1/2(base*heigth)</h2>
+       <h3>Formula :1/2(base*heigth)</h3>
     </div>
 <script src="areaOfTriangle.js"></script>
 </body>
