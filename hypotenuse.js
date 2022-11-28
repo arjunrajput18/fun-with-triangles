@@ -7,7 +7,7 @@ function calculateHypotenuse() {
     const a = Number(firstSide.value);
     const b = Number(secondSide.value);
   
-    if (a === 0 || b === 0) {
+    if (a <= 0 || b <= 0) {
       output.innerText = "Please enter valid lengths!";
       return;
     }
