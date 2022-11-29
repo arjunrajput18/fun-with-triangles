@@ -9,7 +9,13 @@ function checkTriangle() {
   for (let i = 0; i < inputAngle.length; i++) {
     sumofAngles += parseInt(inputAngle[i].value);
   }
-  if (
+if(inputAngle[0].value <= "" ||
+  inputAngle[1].value <= "" ||
+  inputAngle[2].value <= ""){
+    showingOutput.style.color = "red";
+    showingOutput.innerHTML = "Please enter all values of triangle ";
+  }
+  else if (
     inputAngle[0].value <= 0 ||
     inputAngle[1].value <= 0 ||
     inputAngle[2].value <= 0
