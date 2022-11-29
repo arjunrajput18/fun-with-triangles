@@ -9,6 +9,7 @@ function calculateHypotenuse() {
   
     if (a <= 0 || b <= 0) {
       output.innerText = "Please enter valid lengths!";
+      output.style.color="red";
       return;
     }
   

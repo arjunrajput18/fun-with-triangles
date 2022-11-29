@@ -18,6 +18,7 @@ function calculateScore() {
     count += 1;
   }
   if (count < totalAnswer) {
+    showingOutput.style.color="red";
     showingOutput.innerText = "Please answer every question";
   } else {
     showingOutput.innerText = `Your score is ${score}/${totalAnswer}`;
